@@ -1,0 +1,17 @@
+<ng-form name="form" class="my-form">
+    Name <input type="text" name="name" ng-model="input" required>
+    <span ng-show="!form.name.$pristine && form.name.$invalid">*</span><br>
+    Name = {{input}}<br>
+
+    form.$pristine = {{form.name.$pristine}}<br>
+    form.$dirty = {{form.name.$dirty}}<br>
+    form.$valid = {{form.$valid}}<br>
+    form.$invalid = {{form.$invalid}}<br>
+    form.$submitted = {{form.$submitted}}<br>
+    form.$error = {{form.$error}}<br>
+
+</ng-form>
+
+<p>
+    <a class="btn btn-primary btn-lg" role="button" ng-click="submit()">Submit</a>
+</p>
