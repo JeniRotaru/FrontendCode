@@ -27,6 +27,11 @@ hrApp.config(['$routeProvider',
             templateUrl: 'views/employeeview.html',
             controller: 'EmployeeViewController'
         })
+        //New route
+        .when('/user', {
+            templateUrl: 'views/user.html',
+            controller: 'UserController'
+        })
         // TODO #3 add default route for main page
         .otherwise({
         templateUrl: 'views/main.html',

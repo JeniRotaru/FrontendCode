@@ -1,11 +1,18 @@
-<!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <title>User</title>
-</head>
-<body>
+<div>
+    <!-- Input fields -->
+    <p>First name: <input type="text" ng-model="firstName"/></p><br>
+    <p>Last name: <input type="text" ng-model="lastName"/></p><br>
+    <p>Id/CNP: <input type="number" ng-model="id"/></p><br>
+    <p>Age: <input type="number" ng-model="age"/></p><br>
 
-
-
-</body>
-</html>
+    <!-- Buttons :
+        Back = redirect the user to the main page;
+        Reset = reset the fields in the page;
+        Save = save the user’s details in a list;
+        Show/Hide User List = show/hide the list;
+    -->
+    <p><a class="btn btn-primary btn-lg" role="button" ng-click="back()">Back</a></p><br>
+    <p><a class="btn btn-primary btn-lg" role="button" ng-click="reset()">Reset</a></p><br>
+    <p><a class="btn btn-primary btn-lg" role="button" ng-click="saveDetails()">Save</a></p><br>
+    <p><a class="btn btn-primary btn-lg" role="button" ng-click="calculate()">Show/Hide User List</a></p><br>
+</div>
