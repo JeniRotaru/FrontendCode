@@ -3,8 +3,9 @@
  */
 hrApp.service('UserService', function () {
     return {
-        add: function (firstName) {
-            console.log(firstName);
+        firstName: null,
+        addAll: function (firstName) {
+            firstName = firstName;
         }
     }
-});
+})
